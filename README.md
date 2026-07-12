@@ -1,6 +1,6 @@
 # ⚽ LM10 — Lionel Messi Career Intelligence
 <p align="center">
-  <img src="src/assets/LM10.jpg" alt="Lionel Messi" width="180" />
+  <img src="src/assets/lm11.jpg" alt="Lionel Messi" width="180" />
 </p>
 
 An interactive sports-analytics dashboard that explores the exhaustive goals repository of Lionel Messi’s professional football career. Built with **React 19**, **TypeScript**, **Vite**, **Tailwind CSS v4**, and **Recharts**, the platform isolates club-level dominance (FC Barcelona & Paris Saint-Germain) from his legendary international exploits with Argentina, with rich cross-filtering, advanced analytics, and a browsable goals explorer.
