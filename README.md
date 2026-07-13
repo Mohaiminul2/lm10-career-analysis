@@ -19,18 +19,6 @@ An interactive sports-analytics dashboard that explores the exhaustive goals rep
 - **CSV Export** — Export the filtered goals dataset for external analysis.
 - **Responsive & Animated UI** — Built with Tailwind CSS and the `motion` library for a polished, fluid experience.
 
-## 🧱 Tech Stack
-
-| Category      | Technology                                |
-| ------------- | ----------------------------------------- |
-| Framework     | React 19 + TypeScript                     |
-| Build Tool    | Vite 6                                    |
-| Styling       | Tailwind CSS v4 (`@tailwindcss/vite`)     |
-| Charts        | Recharts 3                                |
-| Animation     | Motion                                    |
-| Icons         | lucide-react                              |
-| Data Parsing  | papaparse                                 |
-
 
 ## 📊 Data
 
