@@ -8,25 +8,6 @@ An interactive sports-analytics dashboard that explores the exhaustive goals rep
 
 ---
 
-## Table of Contents
-
-- [About](#about)
-- [Key Features](#key-features)
-- [Technology Stack](#technology-stack)
-- [Architecture & Project Structure](#architecture--project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Data](#data)
-- [Running Tests & Linting](#running-tests--linting)
-- [Docker / Containerization](#docker--containerization)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [Project Status](#project-status)
-- [License](#license)
-
----
-
 ## About
 
 **LM10 Career Intelligence** is a single-page React application that visualizes Lionel Messi's complete career goal record. The dashboard presents a curated dataset of certified career goals spanning club (FC Barcelona, Paris Saint-Germain, Inter Miami) and international (Argentina) competitions, with metadata including competition, season, venue, scoring method, match minute, and assister.
@@ -74,26 +55,6 @@ An interactive sports-analytics dashboard that explores the exhaustive goals rep
 | CI/CD           | Not configured |
 
 ---
-
-## Architecture & Project Structure
-
-```mermaid
-flowchart LR
-    subgraph Client
-        App[App.tsx] --> DashboardContext[DashboardContext]
-        DashboardContext --> Overview[OverviewSection]
-        DashboardContext --> Club[ClubSection]
-        DashboardContext --> Intl[InternationalSection]
-        DashboardContext --> Advanced[AdvancedSection]
-        DashboardContext --> Explorer[ExplorerSection]
-    end
-    
-    Data[Embedded CSV Data] --> PapaParse[PapaParse]
-    PapaParse --> Goals[Goal[] Array]
-    Goals --> DashboardContext
-    
-    Appearances[appearances.ts] --> DashboardContext
-```
 
 **Project structure:**
 
@@ -242,37 +203,6 @@ No other deployment targets (Docker, Kubernetes) are configured.
 
 ---
 
-## Contributing
-
-No `CONTRIBUTING.md` exists. Suggested workflow:
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature`
-3. Make changes
-4. Run `npm run lint` — ensure it passes
-5. Commit: `git commit -m "Add your feature"`
-6. Push: `git push origin feature/your-feature`
-7. Open a Pull Request
-
----
-
-## Project Status
-
-| Area | Status |
-| ---- | ------ |
-| Core Dashboard (5 tabs) | ✅ Implemented |
-| Global Cross-Filtering | ✅ Implemented |
-| CSV Export (all subsets) | ✅ Implemented |
-| Goals Explorer (pagination, sort, filter) | ✅ Implemented |
-| Advanced Analytics (clustering, YoY, profiles) | ✅ Implemented |
-| Responsive UI + Animations | ✅ Implemented |
-| GitHub Pages CI/CD | ❌ Not configured (base path only) |
-| Unit/Integration Tests | ❌ Not configured |
-| Docker Support | ❌ Not configured |
-| LICENSE File | ❌ Not present |
-
----
-
 ## License
 
 **No `LICENSE` file detected in the repository.**
@@ -280,7 +210,3 @@ No `CONTRIBUTING.md` exists. Suggested workflow:
 This project is provided for educational and demonstration purposes. All football career data and imagery remain the property of their respective owners. If you intend to use, modify, or distribute this code, please add an appropriate license file.
 
 ---
-
-<p align="center">
-  Made with ⚽ and React — <strong>LM10 Career Intelligence</strong>
-</p>
